@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { useTheme } from 'vuetify'
 import LinkButton from '@/components/LinkButton.vue'
+import Profile from '@/components/Profile.vue'
 
 type LinkItem = {
   label: string
@@ -56,9 +57,7 @@ function toggleTheme() {
           </div>
 
           <div class="d-flex flex-column align-center text-center" style="gap: 4px;">
-            <v-avatar size="120" color="primary" rounded="circle">
-              <span class="text-h6 font-weight-bold">Photo</span>
-            </v-avatar>
+            <Profile label="Photo" icon="mdi-account" />
 
             <h1 class="text-h4 font-weight-bold">Hikaru Zhao</h1>
             <p class="text-body-1 text-medium-emphasis" style="padding-bottom: 16px;">
